@@ -1,0 +1,33 @@
+
+@media (max-width: 770px) {
+	.gallery__img{
+	width: 180px;
+	max-height: 40%;
+	}
+	.item{
+		width: 100%;
+	}
+	.insc__item--font--kaush{
+		font-size:18px;
+
+	}
+	.insc__item--size--big{
+		font-size: 45px;
+	}
+	
+}
+
+.nav a:hover{
+	text-shadow: none;
+	text-decoration-color: none;
+	background-color: none;
+	color: #fff;
+	background: none;
+	box-shadow: none;
+}
+.navbar-brand:hover{
+	color: white;
+}
+.navbar-nav> li> a{
+text-shadow: 0;
+}

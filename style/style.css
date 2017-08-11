@@ -58,7 +58,7 @@ font-family: 'Roboto Condensed', sans-serif;}
 .top-nav__items{
 	display: flex;
 	flex-flow: row nowrap;
-}/*tttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt*/
+}
 .inscr{
 	text-align: center;
 	padding-top: 5%;
@@ -195,16 +195,19 @@ font-family: 'Roboto Condensed', sans-serif;}
 	right: 13%;
 	width: 36%;
 }
+.article_photo{
+	max-width: 100%;
+}
 .openblock__link{
 	font-weight: 900;
 	color: #000;
 }
 .openblock{	
-	padding: 2%;
 	border: 1px solid rgba(000, 000 , 000,.2);
-	width: 100%;
+	background-color: #fff;
+	border-radius: 0;
 }
-.fa{
+.fa:not(.fa-cart-plus){
 	color:  RGB(149, 225 , 211);
 }
 .grayblock{
@@ -232,14 +235,19 @@ font-family: 'Roboto Condensed', sans-serif;}
 .men{
 	margin: 5% 0;
 }
+.men__hid{
+	display: none;
+}
+.men__hid{
+	background: url(../img/mangradient.png);
+	display: none;
+}
+.men
 .men__img{
-	width: 100%;
+	max-width: 100%;
 }
 .brand-box__img{
 	max-width: 100%;
-}
-.gallery__img{
-	height: 10%;
 }
 .hmm:first-child{
 	width: 100%;
@@ -253,6 +261,9 @@ font-family: 'Roboto Condensed', sans-serif;}
 }
 .gallery{
 	margin-top:2%;
+}
+.gallery__img{
+	margin: 0;
 }
 .mountin{
 	background: url(../img/bg.jpg);
@@ -285,17 +296,15 @@ font-family: 'Roboto Condensed', sans-serif;}
 .map{
 	background: url(../img/fon.jpg);
 	padding: 2% 0;
-	text-align: center;
+	text-align: center;	
 }
-.map__items{
+.map__item{
 	color: RGB(243, 129 , 129);
+	margin: 0.2%;
+	font-weight: bold;
 }
-.map .inscr__line{
-	width: 40%;
-	background-color: RGB(243, 129 , 129);
-}
-.soc i{
-	padding: 3px;
+.soc a{
+	padding: 4px;
 }
 .blog__p{
 	font-size: 12px;
@@ -305,8 +314,30 @@ font-family: 'Roboto Condensed', sans-serif;}
 .blog__item .article__p{
 	font-size: 12px;
 }
+.foot{
+	padding-top: 5%;
+}
 .foot__label{
 	color: #cccccc;
+}
+.sbsc{
+	padding-top: 4%;
+}
+.sbsc input{
+	padding: 2% 4%;
+}
+.sbsc__button{
+	margin: 0;
+	margin-left: -9px;
+	background-color: RGB(149, 225 , 211);
+	color: #fff;
+	padding: 2% 4%;
+	border: none;
+	
+}
+.sbscr__email{
+	border-color: rgba(255, 255 , 255,.3);
+	margin: 0;
 }
 
 
