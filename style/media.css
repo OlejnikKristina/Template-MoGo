@@ -1,29 +1,54 @@
 
 @media (max-width: 770px) {
-	.gallery__img{
-	width: 180px;
-	max-height: 40%;
-	}
-	.item{
-		width: 100%;
-	}
-	.insc__item--font--kaush{
-		font-size:18px;
-
-	}
-	.insc__item--size--big{
-		font-size: 45px;
-	}
+	.gallery__img{width: 180px;max-height: 40%;}
+	.item{width: 100%;}
+	.insc__item--font--kaush{font-size:18px;}
+	.insc__item--size--big{font-size: 45px;}
+	.panel-group{margin-top: 10%;}
+	.flex{display: flex;align-items: center;flex-direction: column;text-align: center;}
 	
 }
+.sc__img{max-width: 100%;}
+.glyphicon-chevron-down{
+	color: RGB(208, 208 , 208);
+	float: right;
+	margin: 2.5%;
+}
+.panel-heading{
+	border-radius: 0;
+}
+.panel-group .panel{
+	border-radius: 0;
+}
+.panel-heading .icon-box__title--black{
+	margin:0;
+}
+.panel-title .fa{
+	margin-right: 2%;
+}
+.panel-body{
+	overflow: auto;
+	max-height: 150px;
+}
+::-webkit-scrollbar{
+	width: 5px;
+}
+::-webkit-scrollbar-thumb{
+	border-radius: 10%;
+	background-color:RGB(149, 225 , 211);
+}
+::-webkit-scrollbar-track {
+      background-color: RGB(245, 245 , 245);
+}
 
-.nav a:hover{
+a:hover, a:focus{
 	text-shadow: none;
 	text-decoration-color: none;
-	background-color: none;
-	color: #fff;
-	background: none;
+	text-decoration: none;
 	box-shadow: none;
+	background: none;
+	text-decoration-style:none;
+	
 }
 .navbar-brand:hover{
 	color: white;
