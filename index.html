@@ -14,31 +14,33 @@
 <link rel="stylesheet" type="text/css" href="style/media.css">
 </head>
 <body>
-	<div class="container-fluid wrap">
-		<header class="section section--fon-eagle">
-			<nav class="navbar">
-			  <div class="container">
-			    <div class="navbar-header">
-			      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			  		 <i class="fa fa-bars fa-4x w" aria-hidden="true"></i>
-			      </button>
-			      <div class="navbar-header">
-			      <a class="navbar-brand top-nav__label" href="#">MoGo</a>
-			      </div>
-			    </div>
-			    <div class="collapse navbar-collapse" id="myNavbar">
-			      <ul class="nav navbar-nav">
-			        <li><a href="" class="link top-nav__link">about</a></li>
-					<li><a href="" class="link top-nav__link">service</a></li>
-					<li><a href="" class="link top-nav__link">work</a></li>
-					<li><a href="" class="link top-nav__link">blog</a></li>
-					<li><a href="" class="link top-nav__link">contact</a></li>
-					<li><a href="" class="link fa fa-cart-plus w"></a></li>
-					<li><a href="" class="link fa fa-search w"></a></li>
-			      </ul>
-			    </div>
-			  </div>
-			</nav>
+	<div class="wrap">
+		<section class="section section--fon-eagle">
+			<header>
+				<nav class="navbar">
+				  <div class="container">
+				    <div class="navbar-header">
+				      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				  		 <i class="fa fa-bars fa-4x w" aria-hidden="true"></i>
+				      </button>
+				      <div class="navbar-header">
+				      <a class="navbar-brand top-nav__label" href="#">MoGo</a>
+				      </div>
+				    </div>
+				    <div class="collapse navbar-collapse" id="myNavbar">
+				      <ul class="nav navbar-nav">
+				        <li><a href="" class="link top-nav__link">about</a></li>
+						<li><a href="" class="link top-nav__link">service</a></li>
+						<li><a href="" class="link top-nav__link">work</a></li>
+						<li><a href="" class="link top-nav__link">blog</a></li>
+						<li><a href="" class="link top-nav__link">contact</a></li>
+						<li><a href="" class="link fa fa-cart-plus w hidden-xs hidden-sm"></a></li>
+						<li><a href="" class="link fa fa-search w hidden-xs hidden-sm"></a></li>
+				      </ul>
+				    </div>
+				  </div>
+				</nav>
+			</header>
 			<section class="container-fluid">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 inscr">
@@ -69,7 +71,7 @@
 					</div>
 				</div>
 			</section>
-	</header>
+	</section>
 		<section class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2 inscr">
@@ -268,28 +270,29 @@
 				</div>
 			</div>
 		</section>
-		<section class="grayblock hidden-sm hidden-xs">
+		<section class="grayblock">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-1 col-xs-1 grayblock__arrow">
+				<div class="row flex">
+					<div class="col-sm-1  hidden-xs grayblock__arrow">
 						<a href="#"><li class="fa fa-arrow-left fa-lg"></li></a>
 					</div>
-					<div class="col-lg-2 col-xs-4 ic grayblock__ichat">
+					<div class="col-sm-2 ic hidden-xs grayblock__ichat">
+						<a href="#"><li class="hidden-xs fa fa-arrow-left fa-lg"></li></a>
 						<i class="fa fa-comments-o fa-5x" aria-hidden="true"></i>
 					</div>
-					<div class="col-lg-8 col-xs-6 grayblock__comments">
+					<div class="col-sm-8 grayblock__comments">
 						<p class="grayblock__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum interdum tortor. Fusce commodo porttitor mauris vel fringilla. Cras ornare tincidunt pretium. Cras ornare tincidunt pretium.</p>
 						<span class="line line--red"></span>
 						<span class="article__item1">Jone Doe</span>
 					</div>
-					<div class="col-lg-1 col-xs-1 grayblock__arrow">
+					<div class="col-sm-1 hidden-xs grayblock__arrow">
 						<a href="#"><li class="fa fa-arrow-right fa-lg"></li></a>
 					</div>
 				</div>
 			</div>
 		</section>
 		<section class="container">
-			<div class="row">
+			<div class="row ">
 				<div class="col-lg-8 col-lg-offset-2 article inscr">
 					<p class="article__item1">Who we are</p>
 					<h3 class="article__item2--bigger link">meet our team</h3>
@@ -300,21 +303,53 @@
 		</section>
 		<section class="container visible-md visible-lg">
 			<div class="row">
-				<figure class="col-xs-4 men">
-					<div class="m en__hid">
+				<figure class="col-xs-4 men info__item">
+					<div class="info__img">
+						<div class="info__trans"></div>
+             			 <div class="info__social">
+             			 	<a  href="faceboo" class="fa fa-2x fa-facebook" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-twitter" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-instagram" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-pinterest-p" aria-hidden="true"></a>
+						</div>
+						<img class="me n__img" src="img/men2.png">
+					</div>
+					<div class="info__caption">
+	              		<span class="info__name icon-box__title--black link">Matthew Dix</span>
+	              		<span class="info__subname article__p coment__p">Graphic Design</span>
+            		</div>
+				</figure>
+				<figure class="col-xs-4 men info__item">
+					<div class="info__img">
+						<div class="info__trans"></div>
+             			 <div class="info__social">
+             			 	<a  href="faceboo" class="fa fa-2x fa-facebook" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-twitter" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-instagram" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-pinterest-p" aria-hidden="true"></a>
+						</div>
 						<img class="men__img" src="img/clearmen.png">
-
 					</div>
+					<div class="info__caption">
+	              		<span class="info__name icon-box__title--black link">Matthew Dix</span>
+	              		<span class="info__subname article__p coment__p">Graphic Design</span>
+            		</div>
 				</figure>
-				<figure class="col-xs-4 men">
-					<div class="m en__hid">
-						<img class="men__img" src="img/men2.png">
-					</div>
-				</figure>
-				<figure class="col-xs-4 men">
-					<div class="m en__hid">
+				<figure class="col-xs-4 men info__item">
+					<div class="info__img">
+						<div class="info__trans"></div>
+             			 <div class="info__social">
+             			 	<a  href="faceboo" class="fa fa-2x fa-facebook" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-twitter" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-instagram" aria-hidden="true"></a>
+							<a  href="faceboo" class="fa fa-2x fa-pinterest-p" aria-hidden="true"></a>
+						</div>
 						<img class="men__img" src="img/jw.png">
 					</div>
+					<div class="info__caption">
+	              		<span class="info__name icon-box__title--black link">Matthew Dix</span>
+	              		<span class="info__subname article__p coment__p">Graphic Design</span>
+            		</div>
 				</figure>
 			</div>
 		</section>
@@ -346,15 +381,14 @@
 			    <span class="sr-only">Next</span>
 			  </a>
 			</div>
-		<section class="grayblock">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 brand-box">
-						<img class="brand-box__img" src="img/logos.png">
-					</div>
-				</div>
-			</div>
-		</section>
+		<div class="logo grayblock">
+			<img class="logo__img" src="img/log1.png">
+			<img class="logo__img" src="img/log2.png">
+			<img class="logo__img" src="img/log3.png">
+			<img class="logo__img" src="img/log4.png">
+			<img class="logo__img" src="img/log5.png">
+			<img class="logo__img" src="img/log6.png">
+		</div>
 		<section class="container">
 			<div class="row">
 				<div class="col-lg-8 col-lg-offset-2 article inscr">
@@ -388,7 +422,7 @@
 					</div>
 					<div class="row">
 						<div class="col-xs-12">
-							<img class="gallery__img gallery__img--width" src="img/7p.jpg">
+						<img class="gallery__img gallery__img--width" src="img/7p.jpg">
 						</div>
 					</div>
 				</div>
@@ -438,8 +472,8 @@
 					<div class="col-lg-1 col-sm-1 grayblock__arrow hidden-xs hidden-sm">
 						<a href="#"><li class="fa fa-arrow-left fa-lg"></li></a>
 					</div>
-					<div class="col-lg-2 col-sm-2 ic grayblock__ichat">
-						<img class="grayblock__img" src="img/girl.png">
+					<div class="col-lg-2 col-sm-2 ic">
+						<img class="grayblock__img client__img" src="img/girl.png">
 					</div>
 					<div class="col-lg-8 col-sm-8 grayblock__comments">
 						<p class="grayblock__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum interdum tortor. Fusce commodo porttitor mauris vel fringilla. Cras ornare tincidunt pretium. Cras ornare tincidunt pretium.</p>
@@ -453,30 +487,30 @@
 			</div>
 		</section>
 		<section class="mountin">
-			<div class="container">
+			<section class="container">
 				<div class="row">
 					<div class="col-lg-8 col-lg-offset-2 article inscr">
 						<p class="article__item1">Happy Clients</p>
-						<h1 class="article__item2--bigger link">What people say</h1>
+						<h2 class="article__item2--bigger link">What people say</h2>
 						<span class="line line--red"></span>
 					</div>
 				</div>
-			</div>
+			</section>
 			<section class="container gallery">
 				<div class="row flex">
-					<div class="col-md-2 col-md-4">
-						<img src="img/c1.png">
+					<div class="col-md-2">
+						<img class="client__img" src="img/c1.png">
 					</div>
-					<div class="col-md-4 col-md-8 flex">
+					<div class="col-md-4 flex">
 						<p class="link--black link">Matthew Dix</p>
 						<p class="article__p coment__p">Graphic Design</p>
 						<span class="line line--red"></span>
 						<p class="article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Fusce bibendum interdum tortor. Cras ornare tincidunt pretium. </p>
 					</div>
-					<div class="col-md-2 col-md-4">
-						<img src="img/c2.png">
+					<div class="col-md-2">
+						<img class="client__img" src="img/c2.png">
 					</div>
-					<div class="col-md-4 col-md-8 flex">
+					<div class="col-md-4 flex">
 						<p class="link--black link">Matthew Dix</p>
 						<p class="article__p coment__p">Graphic Design</p>
 						<span class="line line--red"></span>
@@ -484,21 +518,21 @@
 					</div>
 				</div>
 			</section>
-			<section class="container article">
-				<div class="row coment flex">
-					<div class="col-md-2 col-md-4 ">
-						<img src="img/c3.png">
+			<section class="container gallery">
+				<div class="row flex">
+					<div class="col-md-2">
+						<img class="client__img" src="img/c3.png">
 					</div>
-					<div class="col-md-4 col-md-8 flex">
+					<div class="col-md-4 flex">
 						<p class="link--black link">Matthew Dix</p>
 						<p class="article__p coment__p">Graphic Design</p>
 						<span class="line line--red"></span>
 						<p class="article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.Fusce bibendum interdum tortor. Cras ornare tincidunt pretium. </p>
 					</div>
-					<div class="col-md-2 col-md-4 flex">
-						<img src="img/c4.png">
+					<div class="col-md-2 hidden-xs ">
+						<img class="client__img" src="img/c4.png">
 					</div>
-					<div class="col-md-4 col-md-8 flex">
+					<div class="col-md-4 flex hidden-xs">
 						<p class="link--black link">Matthew Dix</p>
 						<p class="article__p coment__p">Graphic Design</p>
 						<span class="line line--red"></span>
@@ -518,38 +552,52 @@
 			</section>
 			<section class="container sc">
 				<div class="row">
-					<div class="col-md-4">
-						<img class="sc__img" src="img/blog1.jpg">
+					<div class="col-md-4 flex">
+						<img class=" sc__img" src="img/blog1.jpg">
 						<hr>
-						<h5 class="icon-box__title--black link">Lorem ipsum dolor sit amet</h5>
-						<p class="article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. 
-						Lorem ipsum dolor sit amet</p>
-						<i class="fa fa-eye fa-lg" aria-hidden="true"></i>
-						<span class="article__p">523</span>
-						<i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
-						<span class="article__p">523</span>
+						<div class="info__info">
+							<h5 class="icon-box__title--black link">Lorem ipsum dolor sit amet</h5>
+							<p class="article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. 
+							Lorem ipsum dolor sit amet</p>
+							<div class="info__icons">
+								<i class="fa fa-eye fa-lg" aria-hidden="true"></i>
+								<span class="article__p">523</span>
+								<i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
+								<span class="article__p">523</span>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 flex">
 						<img class="sc__img" src="img/blog2.jpg">
-						<hr>
-						<h5 class="icon-box__title--black link">Lorem ipsum dolor sit amet</h5>
-						<p class="article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. 
-						Lorem ipsum dolor sit amet</p>
-						<i class="fa fa-eye fa-lg" aria-hidden="true"></i>
-						<span class="article__p">523</span>
-						<i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
-						<span class="article__p">523</span>
+							<hr>
+						<div class="info__info">
+							<div class="flex">
+								<h5 class="icon-box__title--black link">Lorem ipsum dolor sit amet</h5>
+								<p class="article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. 
+								Lorem ipsum dolor sit amet</p>
+							</div>
+							<div class="info__icons">
+								<i class="fa fa-eye fa-lg" aria-hidden="true"></i>
+								<span class="article__p">523</span>
+								<i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
+								<span class="article__p">523</span>
+							</div>
+						</div>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-4 flex">
 						<img class="sc__img" src="img/blog3.jpg">
-						<hr>
-						<h5 class="icon-box__title--black link">Lorem ipsum dolor sit amet</h5>
-						<p class="article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. 
-						Lorem ipsum dolor sit amet</p>
-						<i class="fa fa-eye fa-lg" aria-hidden="true"></i>
-						<span class="article__p">523</span>
-						<i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
-						<span class="article__p">523</span>
+							<hr>
+						<div class="info__info">
+							<h5 class="icon-box__title--black link">Lorem ipsum dolor sit amet</h5>
+							<p class="article__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do. 
+							Lorem ipsum dolor sit amet</p>
+							<div class="info__icons">
+								<i class="fa fa-eye fa-lg" aria-hidden="true"></i>
+								<span class="article__p">523</span>
+								<i class="fa fa-commenting-o fa-lg" aria-hidden="true"></i>
+								<span class="article__p">523</span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -568,8 +616,8 @@
 					<span class="foot__capt article__p">followers</span>
 					<hr>
 					<span class="soc">
-						<a  href="faceboo" class="article__p">Follow Us:</a>
-						<a  href="faceboo" class="fa fa-lg fa-facebook" aria-hidden="true"></a>
+						<a  href="https://www.facebook.com" class="article__p">Follow Us:</a>
+						<a  href="https://www.facebook.com/profile.php?id=100002494677332" class="fa fa-lg fa-facebook" aria-hidden="true"></a>
 						<a  href="faceboo" class="fa fa-lg fa-twitter" aria-hidden="true"></a>
 						<a  href="faceboo" class="fa fa-lg fa-instagram" aria-hidden="true"></a>
 						<a  href="faceboo" class="fa fa-lg fa-pinterest-p" aria-hidden="true"></a>
@@ -580,43 +628,43 @@
 					<div class="input foot">
 						<form id="input__form" method="POST" name="sbsc" class="sbsc">
 							<input type="email" name="email" id="email" placeholder="Your Email ..." class="input__email article__p coment__p">
-							<input type="button" name="button" value="subscribe" class="input__button icon-box__title--black link">
+							<input type="button" name="button" value="subscribe" class="input__button icon-box__title--black link">subscribe</input>
 						</form>
 					</div>
 				</div>
 				<div class="col-md-4">
-					<div class="container-fluid blog">
+					<div class="container-fluid blog flex">
 						<div class="row blog__item">
 							<h6 class="icon-box__title--black link">blogs</h6>
-							<div class="col-xs-4">
+							<div class="col-sm-4">
 								<img src="img/blog1.png" alt="photo" class="blog__img">
 							</div>
-							<div class="col-xs-8">
-								<a href="#" class="icon-box__title--black link blog__p">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-								<time class=" blog__time article__p coment__p">Jan 9, 2017</time>
+							<div class="col-sm-8">
+								<a href="#" class="icon-box__title--black link blog__p">Lorem ipsum dolor sit amet, consectetur h1</a>
+								<time datetime="2016-01-09"  class="blog__time article__p coment__p">Jan 9, 2017</time>
 							</div>
 						</div>
 						<div class="row blog__item">
-							<div class="col-xs-4">
+							<div class="col-sm-4">
 								<img src="img/blog2.png" alt="photo" class="blog__img">
 							</div>
-							<div class="col-xs-8">
-								<a href="#" class="icon-box__title--black link blog__p">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-								<time class="blog__time article__p coment__p">Jan 9, 2017</time>
+							<div class="col-sm-8">
+								<a href="#" class="icon-box__title--black link blog__p">Lorem ipsum dolor sit amet, consectetur</a>
+								<time datetime="2016-01-09"  class="blog__time article__p coment__p">Jan 9, 2017</time>
 							</div>
 						</div>
 						<div class="row blog__item">
-							<div class="col-xs-4">
+							<div class="col-sm-4">
 								<img src="img/blog3.png" alt="photo" class="blog__img">
 							</div>
-							<div class="col-xs-8">
-								<a href="№" class="icon-box__title--black link blog__p">Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-								<time class=" blog__time article__p coment__p">Jan 9, 2017</time>
+							<div class="col-sm-8">
+								<a href="№" class="icon-box__title--black link blog__p">Lorem ipsum dolor sit amet, consectetur </a>
+								<time datetime="2016-01-09" class=" blog__time article__p coment__p">Jan 9, 2017</time>
 							</div>
 						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-md-4 flex">
 					<a href="#" class="icon-box__title--black link">instagram</a>
 					<a href="instagram.com"><img src="img/insta.png"></a><br>
 					<a href="#" class="article__p coment__p" href="#">View more photos</a>
