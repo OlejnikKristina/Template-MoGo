@@ -1,0 +1,150 @@
+
+.info__img {
+  position: relative;
+  font-size: 0;
+}
+
+.info__trans {
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #95e1d3;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: transform .3s;
+  transition-delay: .1s;
+}
+
+.info__img > img {
+  width: 100%;
+  transition: transform .3s;
+}
+
+.info__item:hover .info__img > img {
+  transform: translate(-5px,-5px);
+}
+
+.info__item:hover .info__trans {
+  transform: translate(5px,5px);
+}
+
+.info__item:hover .info__social {
+  transform: scale(1);
+}
+
+.info__caption {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.info__name,
+.info__subname {
+  display: block;
+}
+.pic__img{
+  position: relative;
+    font-size: 0;
+}
+.pic__trans{
+  display: inline-block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #95e1d3;
+  top: 0;
+  left: 0;
+  z-index: -1; opacity: 0.1;
+  transition: transform .5s;
+  transition-delay: .2s;
+}
+.pic__img>img{
+   width: 100%;
+    transition: transform .3s;
+}
+.pic__item:hover .pic__img > img {
+  transform: translate(-5px,-5px);
+}
+.pic__item:hover .pic__trans {
+  transform: translate(5px,5px);
+}
+
+.pic__trans{
+  display: block;
+	font-size: 16px;
+  position: absolute;
+  text-align: center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(../img/gradient.png);
+  opacity: 0.7;
+  background-color: red;
+  z-index: 3;
+  transform: scale(0);
+  transform-origin: 50% 50%; 
+  transition: transform .3s;
+  position: absolute;
+  margin-top: -8px;
+  margin-left: -6.8px;
+  
+}
+.pic__trans .fa{
+  color: #fff;
+  display: inline-block;
+}
+.info__social {
+  font-size: 16px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: url(../img/mangradient.png);
+  z-index: 3;
+  transform: scale(0);
+  transform-origin: 50% 50%; 
+  transition: transform .3s;
+  margin-top: -8px;
+  margin-left: -6.8px;
+
+}
+.maingallery__box{
+  display: inline-block;
+}
+.maingallery{
+  display: flex;  
+  flex-direction: row;
+}
+.maingallery__box div{
+  background-color: salmon;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+}
+.maingallery__box img{
+width: 100%;
+}
+.a{
+  display: flex;
+  flex-flow:row wrap;
+  width: 60%;
+  align-items: stretch;
+  align-content: flex-start;
+}
+.a .maingallery__box{
+  width: 50%;
+}
+.b,.c{
+  display: flex;
+}
+.c {
+  display: flex;
+  flex-flow: column;
+}

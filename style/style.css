@@ -196,6 +196,10 @@ font-family: 'Roboto Condensed', sans-serif;}
 	top: 75%;
 	right: 13%;
 	width: 36%;
+	transition: all 0.5s ease;
+}
+.phone__smphone:hover{
+	transform: rotate(10deg);
 }
 .article_photo{
 	max-width: 100%;
@@ -260,69 +264,6 @@ font-family: 'Roboto Condensed', sans-serif;}
 	max-width: 100%;
 }
 
-
-.info__img {
-  position: relative;
-  font-size: 0;
-}
-
-.info__trans {
-  display: inline-block;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: #95e1d3;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  transition: transform .3s;
-  transition-delay: .1s;
-}
-
-.info__img > img {
-  width: 100%;
-  transition: transform .3s;
-}
-
-.info__item:hover .info__img > img {
-  transform: translate(-5px,-5px);
-}
-
-.info__item:hover .info__trans {
-  transform: translate(5px,5px);
-}
-
-.info__item:hover .info__social {
-  transform: scale(1);
-}
-
-.info__caption {
-  text-align: center;
-  margin-top: 10px;
-}
-
-.info__name,
-.info__subname {
-  display: block;
-}
-
-.info__social {
-  font-size: 16px;
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100%;
-  background: url(../img/clearmen.png);
-  z-index: 3;
-  transform: scale(0);
-  transform-origin: 50% 50%; 
-  transition: transform .3s;
-  margin-top: -8px;
-  margin-left: -6.8px;
-
-}
 .info__social .fa{
 	color:RGB(243, 129 , 129);
 	padding: 4%;
@@ -332,25 +273,6 @@ font-family: 'Roboto Condensed', sans-serif;}
 	color:#fff;
 	background-color: RGB(243, 129 , 129);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .brand-box__img{
 	max-width: 100%;
@@ -407,8 +329,18 @@ font-family: 'Roboto Condensed', sans-serif;}
 	margin: 0.2%;
 	font-weight: bold;
 }
-.soc a{
-	padding: 4px;
+.social a{
+	padding: 2%;
+}
+.social{
+	width: 100%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-flow: column no-wrap;
+}
+.social .article__p{
+	margin:0;
 }
 .blog__p{
 	font-size: 12px;
@@ -418,8 +350,23 @@ font-family: 'Roboto Condensed', sans-serif;}
 .blog__item .article__p{
 	font-size: 12px;
 }
+.blog__item img{
+	margin-right: 10px;
+}
+.blog__item{
+	margin:20px;
+	display: flex;
+	flex-flow:column no-warp;
+	height: 80px;
+	line-height: 10px;
+}
+.clearboth{
+	clear: both;
+	width: 100%;
+}
 .blog__time{
 	display:block;
+
 }
 .foot{
 	padding-top: 5%;
@@ -431,23 +378,50 @@ font-family: 'Roboto Condensed', sans-serif;}
 .foot__capt{
 	color: #000;
 }
+.sbsc{
+	width:100% ;
+	height: 40px;
+	display: flex;
+	flex-flow: row no-wrap;
+	margin-top: 20px;
+}
 .input__button{
+	margin:0;
 	margin-left: -9px;
 	background-color: RGB(149, 225 , 211);
 	color: #fff;
-	padding: 1% 10%;
+	padding: 5px 13px;
 	border: none;
 	font-size: 12px;
 	letter-spacing: 2px;
-	
+	box-sizing: border-box;
 }
 .input__email{
+	margin:0;
 	padding: 2% 4%;
 	border: 1px solid #cccccc;
+	box-sizing: border-box;
+	width: 70%;
 
 }
 
-
+.car-text{
+	margin-top: 2%;
+	line-height: 30px;
+	font-size: 16px;
+}
+.carousel-control.left{
+	background-image: none;
+}
+.carousel-control.right{
+	background-image: none;
+}
+.glyphicon-chevron-left{
+	color: gray;
+}
+.glyphicon-chevron-right{
+	color: gray;
+}
 
 
 
