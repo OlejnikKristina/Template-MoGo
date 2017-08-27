@@ -55,7 +55,7 @@
   background: #95e1d3;
   top: 0;
   left: 0;
-  z-index: -1; opacity: 0.1;
+  z-index: -1; opacity: 0.5;
   transition: transform .5s;
   transition-delay: .2s;
 }
@@ -91,6 +91,7 @@
   position: absolute;
   margin-top: -8px;
   margin-left: -6.8px;
+  transition-delay: .2s;
   
 }
 .pic__trans .fa{
@@ -114,21 +115,31 @@
   margin-left: -6.8px;
 
 }
-.maingallery{
-  display: flex;  
-  height:95vh;
-}
 .maingallery__gradient{
   width: 100%;
   height: 100%;
   background: url(../img/mangradient.png);
   background-size: 100% 100%;
   position: absolute;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+  opacity: 0;
+  justify-content: center;
+  transition:opacity .4s ease-in;
+  z-index: 2;
+
+}
+.maingallery__gradient .fa, .maingallery__gradient p{
+  color: #fff;
+  margin-bottom: 10px;
+}
+.maingallery__gradient:hover{
+  opacity: 1;
 }
 .maingallery__photo{
 position: absolute;
-z-index: 1;
-opacity: 1;
 width: 100%;
 height: 100%;
 }
@@ -137,13 +148,17 @@ height: 100%;
   width: 100%;
   height: 100%;
 }
+.maingallery{
+  display: flex;  
+  height:95vh;
+}
 .a{
   flex:2;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
 }
-.a-a{
+.child-of-a{
   display: flex;
   flex-flow: row nowrap;
   width: 100%;

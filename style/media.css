@@ -1,4 +1,45 @@
+a:hover, a:focus,.nav>li>a:focus, .nav>li>a:hover{
+	text-shadow: none;
+	text-decoration-color: none;
+	text-decoration: none;
+	box-shadow: none;
+	background: none;
+	text-decoration-style:none;
+	
+}
+.nav>li>a:focus, .nav>li>a:hover:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #2098D1;
+    height: 4px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
 
+
+.navbar-brand:hover{
+	color: white;
+}
+a:hover, a:focus {
+  -o-transform: scale(1.2, 1.2);
+  -ms-transform: scale(1.2, 1.2);
+  -moz-transform: scale(1.2, 1.2);
+  -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+}
+.nav>li>a:focus, .nav>li>a:hover{
+	background-color: rgba(0,0,0,0);
+	text-shadow: none;
+	color:RGB(252, 227 , 138);
+}
 @media (max-width: 770px) {
 	.gallery__img{width: 180px;max-height: 40%;}
 	.item{width: 100%;}
@@ -19,6 +60,8 @@
 	.info__info--md{display: flex;align-items: center;flex-direction: column;text-align: center;}
 	.navbar-nav>li>a{text-align: center;}
 	.logo{flex-wrap:wrap;}
+		.inscr{padding-top: 0;}
+
 }
 @media(max-width: 1310px){
   .maingallery{height: 75vh;}
@@ -31,23 +74,20 @@
    .maingallery{height: 130vh;
     flex-flow: column wrap;}
     .b{display: none;}
-      .c{
-        flex-flow: row!important;
-      }
+      .c{flex-flow: row!important;}
       .section--fon-eagle{padding-bottom: 20%;}
-  }
 }
 @media(max-width:500px){
   .maingallery{height: 100vh;}
-  .inscr{padding-top: 10%;}
+  .inscr/*:not(:first-child)*/{padding-top: 10%;}
   .article__p{padding-bottom: 3%;}
   .grayblock__comments{padding: 30px;}
 }
 @media(max-width:330px){
-  .maingallery{height: 70vh;}
-
-
-
+  .maingallery{height: 120vh;}
+	.insc__item--size--big{font-size: 15vw;}
+	.inscr{padding-top: 0;}
+  }
 
 .glyphicon-chevron-down{
 	color: RGB(208, 208 , 208);
@@ -81,33 +121,3 @@
       background-color: RGB(245, 245 , 245);
 }
 
-a:hover, a:focus{
-	text-shadow: none;
-	text-decoration-color: none;
-	text-decoration: none;
-	box-shadow: none;
-	background: none;
-	text-decoration-style:none;
-	
-}
-.navbar-brand:hover{
-	color: white;
-}
-.nav>li>a:focus, .nav>li>a:hover{
-	background-color: rgba(0,0,0,0);
-	text-shadow: none;
-	color:RGB(252, 227 , 138);
-}
-.hover-line{
-	width: 0%;
-	height:2px;
-	display: inline-block;
-	transition: all 0.5s ease;
-	margin-top: -15px;
-
-}
-.hover-line:hover, .hover-line:focus{
-	width: 100%;	height: 2px;
-	transition: all 0.5s ease;
-	background-color: RGB(252, 227 , 138);
-}
