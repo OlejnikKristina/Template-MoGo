@@ -84,7 +84,6 @@
   height: 100%;
   background: url(../img/gradient.png);
   opacity: 0.7;
-  background-color: red;
   z-index: 3;
   transform: scale(0);
   transform-origin: 50% 50%; 
@@ -115,36 +114,46 @@
   margin-left: -6.8px;
 
 }
-.maingallery__box{
-  display: inline-block;
-}
 .maingallery{
   display: flex;  
-  flex-direction: row;
+  height:95vh;
 }
-.maingallery__box div{
-  background-color: salmon;
+.maingallery__gradient{
   width: 100%;
   height: 100%;
-  z-index: 300;
+  background: url(../img/mangradient.png);
+  background-size: 100% 100%;
+  position: absolute;
 }
-.maingallery__box img{
+.maingallery__photo{
+position: absolute;
+z-index: 1;
+opacity: 1;
 width: 100%;
+height: 100%;
+}
+.maingallery__box{
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 .a{
+  flex:2;
   display: flex;
-  flex-flow:row wrap;
-  width: 60%;
-  align-items: stretch;
-  align-content: flex-start;
+  flex-flow: column nowrap;
+  justify-content: space-between;
 }
-.a .maingallery__box{
-  width: 50%;
+.a-a{
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  height: 100%;  
+}
+.c, .b{
+  flex-flow: column;
 }
 .b,.c{
+  flex:1;
   display: flex;
-}
-.c {
-  display: flex;
-  flex-flow: column;
+
 }

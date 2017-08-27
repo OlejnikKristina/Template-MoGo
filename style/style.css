@@ -230,11 +230,15 @@ font-family: 'Roboto Condensed', sans-serif;}
 }
 .logo{
 	display: flex;
-	justify-content: space-around;
-	flex-flow: row wrap;
+	justify-content: center;
+	align-content: center;
+	flex-flow: row nowrap;
+		background: RGB(248, 248 , 248);
+
 }
-.logo__img{
+.logo__img:not(:first-child){
 	max-width: 100%;
+	margin-left: 5%;
 }
 .fa-comments-o{
 	border:4px solid RGB(149, 225 , 211);
@@ -249,17 +253,6 @@ font-family: 'Roboto Condensed', sans-serif;}
 .grayblock__arrow{
 	box-sizing: border-box;
 }
-.men{
-	margin: 5% 0;
-}
-.men__hid{
-	display: none;
-}
-.men__hid{
-	background: url(../img/mangradient.png);
-	display: none;
-}
-.men
 .men__img{
 	max-width: 100%;
 }
@@ -422,19 +415,6 @@ font-family: 'Roboto Condensed', sans-serif;}
 .glyphicon-chevron-right{
 	color: gray;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 .my div{
 	background-color: gold;
 	height: 100px;
