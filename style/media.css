@@ -70,7 +70,7 @@ a:hover, a:focus {
   .grayblock__comments{padding: 30px;}
 }
 @media(max-width:330px){
-  .maingallery{height: 120vh;}
+  .maingallery{height: 60vh;}
 	.insc__item--size--big{font-size: 15vw;}
 	.inscr{padding-top: 0;}
   }
