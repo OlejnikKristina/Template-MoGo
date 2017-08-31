@@ -7,9 +7,6 @@ a:hover, a:focus,.nav>li>a:focus, .nav>li>a:hover{
 	text-decoration-style:none;
 	
 }
-.nav>li>a:focus, .nav>li>a:hover:before {
-}
-
 
 .navbar-brand:hover{
 	color: white;

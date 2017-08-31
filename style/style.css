@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700|Roboto+Condensed:300i,400');
-
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 body{
 	margin: 0;
 	padding: 0;
@@ -139,7 +142,7 @@ font-family: 'Roboto Condensed', sans-serif;}
 	margin:4% 0% 8% 0; 
 }
 .pic__itself{
-	width: 95%;
+	width: 100%;
 	background: url(..img/gradient.png);
 	background-position: center;
 }
@@ -254,7 +257,7 @@ font-family: 'Roboto Condensed', sans-serif;}
 	box-sizing: border-box;
 }
 .men__img{
-	max-width: 100%;
+/*	height: 300px;*/
 }
 
 .info__social .fa{
