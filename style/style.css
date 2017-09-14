@@ -64,22 +64,22 @@ font-family: 'Roboto Condensed', sans-serif;}
 	display: flex;
 	flex-flow: row nowrap;
 }
-.inscr{
+.mini-block{
 	text-align: center;
 	padding-top: 5%;
 }
-.inscr .line--red{
+.mini-block .line--red{
 	margin-bottom: 3%;
 }
-.inscr--pad{
+.mini-block--pad{
 	text-align: center;
 	padding: 2.5% 0 5% 0;
 }
-.insc__item--font--kaush{
+.heading{
 	font-family: 'Kaushan Script', cursive;
 	font-size: 3vw;
 }
-.insc__item--size--big{
+.main-heading{
 	font-size: 15vh;
 	font-weight: bold;
 }
@@ -93,14 +93,14 @@ font-family: 'Roboto Condensed', sans-serif;}
 	background-color: red;
 	margin:2% 3%;
 }
-.inscr__button{
+.mini-block__button{
 	display: inline-block;
 	background: none;
 	padding: 0.6% 1.8%;
 	font-weight: bold;
 	border: 3px solid #fff;
 }
-.inscr__button--mrg {
+.mini-block__button--mrg {
 	margin-top: 2%;
 }
 .line__item--wider{
@@ -123,16 +123,16 @@ font-family: 'Roboto Condensed', sans-serif;}
 .line__num {
 	font: bold 16px 'Montserrat', sans-serif;
 }
-.article__item1{
+.title{
 	font: 24px 'Kaushan Script', cursive;
 }
-.article__item2--bigger{
+.subtitle{
 	font-size: 27px ;
 	color: #000;
 	font-weight: bold;
 	margin-top: 0;
 }
-.article__p{
+.lead{
 	font: 15px 'Roboto Condensed', sans-serif;
 	color:#999999;
 	margin-bottom: 4%;
@@ -173,7 +173,7 @@ font-family: 'Roboto Condensed', sans-serif;}
 	margin-left: 12%;
 	line-height: 25px;
 }
-.icon-box__title--black {
+.icon-box__title {
 	color: #000;
 	margin-left: 5%;
 	font-weight: bold;
@@ -335,7 +335,7 @@ font-family: 'Roboto Condensed', sans-serif;}
 	align-items: center;
 	flex-flow: column no-wrap;
 }
-.social .article__p{
+.social .lead{
 	margin:0;
 }
 .blog__p{
@@ -343,7 +343,7 @@ font-family: 'Roboto Condensed', sans-serif;}
 	line-height: 18px;
 	margin: 0;
 }
-.blog__item .article__p{
+.blog__item .lead{
 	font-size: 12px;
 }
 .blog__item img{

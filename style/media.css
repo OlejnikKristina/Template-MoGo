@@ -7,7 +7,12 @@ a:hover, a:focus,.nav>li>a:focus, .nav>li>a:hover{
 	text-decoration-style:none;
 	
 }
-
+.line__block a.link:hover{
+	color: RGB(252, 227 , 138);;
+}
+.mini-block:not(:first-child){
+	padding-top:10px;
+}
 .navbar-brand:hover{
 	color: white;
 }
@@ -16,6 +21,8 @@ a:hover, a:focus {
   -ms-transform: scale(1.2, 1.2);
   -moz-transform: scale(1.2, 1.2);
   -webkit-transform: scale(1.2, 1.2);
+  transform: scale(1.2, 1.2);
+  color: #000;
   
 }
 .nav>li>a:focus, .nav>li>a:hover{
@@ -27,12 +34,12 @@ a:hover, a:focus {
 	.gallery__img{width: 180px;max-height: 40%;}
 	.item{width: 100%;}
 	.panel-group{margin-top: 10%;}
-	.flex{display: flex;align-items: center;flex-direction: column;text-align: center;}
+	.centered{display: flex;align-items: center;flex-direction: column;text-align: center;}
 	.client__img{padding:10% 0;}
 	.nav{float: none;}
 	.section--fon-eagle {padding-bottom: 0;}
-	.insc__item--size--big{font-size: 15vw;}
-	.insc__item--font--kaush{font-size: 10vw;}
+	.main-heading{font-size: 10vw;}
+	.heading{font-size: 5vw;}
 	.foot .row p{text-align: center;}	
 }
 @media (max-width: 950px){
@@ -43,12 +50,11 @@ a:hover, a:focus {
 	.info__info--md{display: flex;align-items: center;flex-direction: column;text-align: center;}
 	.navbar-nav>li>a{text-align: center;}
 	.logo{flex-wrap:wrap;}
-		.inscr{padding-top: 0;}
 
 }
 @media(max-width: 1310px){
   .maingallery{height: 75vh;}
-  .insc__item--size--big{font-size: 8vw;}
+  .main-heading{font-size: 8vw;}
 }
 @media(max-width: 1200px){
    .maingallery{height: 60vh;
@@ -61,15 +67,17 @@ a:hover, a:focus {
       .section--fon-eagle{padding-bottom: 20%;}
 }
 @media(max-width:500px){
-  .maingallery{height: 100vh;}
-  .inscr/*:not(:first-child)*/{padding-top: 10%;}
-  .article__p{padding-bottom: 3%;}
+  .maingallery{height: 600px;}
+  .mini-block/*:not(:first-child)*/{padding-top: 10%;}
+  .lead{padding-bottom: 3%;}
   .grayblock__comments{padding: 30px;}
+  .heading{font-size: 5vw;margin-top: 0;
+}
 }
 @media(max-width:330px){
-  .maingallery{height: 60vh;}
-	.insc__item--size--big{font-size: 15vw;}
-	.inscr{padding-top: 0;}
+  .maingallery{height: 500px;}
+	.main-heading{font-size: 10vw;}
+	.mini-block:not(:first-child){padding-top: 0;}
   }
 
 .glyphicon-chevron-down{
@@ -83,7 +91,7 @@ a:hover, a:focus {
 .panel-group .panel{
 	border-radius: 0;
 }
-.panel-heading .icon-box__title--black{
+.panel-heading .icon-box__title{
 	margin:0;
 }
 .panel-title .fa{

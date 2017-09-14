@@ -27,7 +27,7 @@
 .nav>li>a:hover:before, .nav>li>a:focus:before, .nav>li>a:active:before {
   right: 0;
 }
-.inscr__button--mrg {
+.mini-block__button--mrg {
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -38,7 +38,7 @@
   -webkit-transition-property: box-shadow, transform;
   transition-property: box-shadow, transform;
 }
-.inscr__button--mrg:hover, .inscr__button--mrg:focus, .inscr__button--mrg:active {
+.mini-block__button--mrg:hover, .mini-block__button--mrg:focus, .mini-block__button--mrg:active {
   box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
