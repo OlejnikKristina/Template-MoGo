@@ -114,7 +114,7 @@ font-family: 'Roboto Condensed', sans-serif;}
 .article{
 	padding-top: 5% ;
 }
-.mrgbtm{
+.section_services{
 	margin-bottom: 3%;
 }
 .page{
@@ -181,6 +181,9 @@ font-family: 'Roboto Condensed', sans-serif;}
 }
 .icon-box__icon{
 	color: RGB(149, 225 , 211);	
+}
+.icon-box h4{
+	display: inline-block;
 }
 .page--fon{
 	background: url(../img/banner2.png) no-repeat center top;
@@ -428,4 +431,11 @@ font-family: 'Roboto Condensed', sans-serif;}
 }
 .myy{
 	padding-top: 100px;
+}
+.insta-box img{
+	transition: all 0.5s ease-in-out;
+	padding-bottom: 3px;
+}
+.insta-box img:hover{
+	transform:scale(1.1);
 }

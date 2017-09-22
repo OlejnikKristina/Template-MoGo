@@ -50,6 +50,7 @@ a:hover, a:focus {
 	.info__info--md{display: flex;align-items: center;flex-direction: column;text-align: center;}
 	.navbar-nav>li>a{text-align: center;}
 	.logo{flex-wrap:wrap;}
+	.lead{margin-left:5%;}
 
 }
 @media(max-width: 1310px){
